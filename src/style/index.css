@@ -1,0 +1,19 @@
+/* 同一张背景图，只是位置不同 */
+.common {
+    width: 11px;
+    height: 14px;
+    background-image: url("https://jhcan333.github.io/can-Share/preview/cssSpritesAndIconFont/images/sprites.png");
+    background-repeat: no-repeat;
+}
+
+.test1 {
+    background-position: 0px 0px;
+}
+
+.test2 {
+    background-position: -26px 0px;
+}
+
+.line div {
+    display: inline-block;
+}

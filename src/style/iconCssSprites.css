@@ -1,0 +1,60 @@
+
+.cssBack {
+    width: 300px;
+    height: 100px;
+    background: url("../static/cssIcon.png") no-repeat;
+}
+
+ul.Sprites {
+    margin: 0 auto;
+    border: 1px solid #F00;
+    width: 400px;
+    padding: 10px;
+}
+
+ul.Sprites li {
+    font-size: 14px;
+    margin: 10px 0;
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+ul.Sprites li span {
+    display: inline-block;
+    width: 17px;
+    padding-top: 5px;
+    height: 17px;
+    overflow: hidden;
+    background: url("../static/cssIcon.png") no-repeat;
+}
+
+ul.Sprites li a {
+    padding-left: 5px
+}
+
+/*/---------------------- 关键css ----------------*/
+ul.Sprites li span.a1 {
+    background-position: -62px -32px
+}
+
+ul.Sprites li span.a2 {
+    background-position: -86px -32px
+}
+
+ul.Sprites li span.a3 {
+    background-position: -110px -32px
+}
+
+ul.Sprites li span.a4 {
+    background-position: -133px -32px
+}
+
+ul.Sprites li span.a5 {
+    background-position: -158px -32px
+}
+
+ul.Sprites li span.a5:hover {
+    background-position: -133px -32px
+}
