@@ -8,10 +8,21 @@ export const IconFont = () => {
             <div>
                 单色示例：
                 <i className="iconfont">&#xe602;</i>
+                <i className="iconfont">&#xe642;</i>
+                <i className="iconfont">&#xe61c;</i>
                 <i className="iconfont">&#xe7cd;</i>
             </div>
             <div>
                 彩色示例：
+                <svg className="icon" aria-hidden="true">
+                    <use xlinkHref="#icon-ppt"/>
+                </svg>
+                <svg className="icon" aria-hidden="true">
+                    <use xlinkHref="#icon-word"/>
+                </svg>
+                <svg className="icon" aria-hidden="true">
+                    <use xlinkHref="#icon-excels"/>
+                </svg>
                 <svg className="icon" aria-hidden="true">
                     <use xlinkHref="#icon-002-flower-1"/>
                 </svg>
