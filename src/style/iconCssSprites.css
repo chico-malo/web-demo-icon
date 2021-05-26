@@ -6,10 +6,10 @@
 }
 
 ul.Sprites {
-    margin: 0 auto;
-    border: 1px solid #F00;
+    border: 1px solid #c1c1c1;
     width: 400px;
-    padding: 10px;
+    height: 500px;
+    padding: 20px;
 }
 
 ul.Sprites li {

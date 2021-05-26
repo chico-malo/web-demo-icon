@@ -1,12 +1,15 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom'
 import { IconCssSprites } from "./src/views/IconCssSprites";
+import { IconFont } from "./src/views/Iconfont";
+import "./src/style/index.css"
 
 class App extends React.Component {
     render() {
         return (
-            <div>
+            <div className="application">
                 <IconCssSprites/>
+                <IconFont/>
             </div>
         );
     }
