@@ -1,0 +1,10 @@
+.iconParkContainer {
+    border: 1px solid #c1c1c1;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+}
+
+.icon-park-excel:hover {
+    color: red
+}
