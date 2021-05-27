@@ -5,6 +5,10 @@
     padding: 20px;
 }
 
+.iconParkContainer div {
+    margin: 35px 0;
+}
+
 .icon-park-excel:hover {
     color: red
 }

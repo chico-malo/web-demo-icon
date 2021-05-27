@@ -8,10 +8,23 @@ import "../style/iconPark.css"
 const IconConfig = { ...DEFAULT_ICON_CONFIGS, prefix: 'icon' }
 
 export const IconPark = () => {
-    const [stateFill, setFill] = useState(['#333', '#2F88FF'])
+    // 颜色
+    const [stateIsFill, setIsFill] = useState(false)
+    const initColor = ['#333', '#2F88FF'];
+    const [stateFill, setFill] = useState(initColor)
     const onExcelClick = () => {
-        setFill(['#f8e71c', '#242424'])
+        const isFill = !stateIsFill;
+        const fill = isFill ? ['#f8e71c', '#242424'] : initColor
+        setFill(fill)
+        setIsFill(isFill)
     }
+
+    // 旋转
+    const [stateSpin, setSpin] = useState(false)
+    const onExcelSpin = () => {
+        setSpin(!stateSpin)
+    }
+
     return (
         <div className="iconParkContainer">
             <h1>iconPark</h1>
@@ -31,11 +44,20 @@ export const IconPark = () => {
             </div>
             <div>
                 hover示例：
-                <Excel theme="two-tone" size="24" fill={stateFill} strokeLinejoin="miter"
+                <Excel theme="multi-color" size="24" fill={stateFill} strokeLinejoin="miter"
                        strokeLinecap="square"
                        onClick={onExcelClick}
                        className="icon-park-excel"
                 />
+
+                <Excel theme="two-tone" size="24" fill={initColor} strokeLinejoin="miter"
+                       strokeLinecap="square"
+                       spin={stateSpin}
+                       onClick={onExcelSpin}
+                       className="icon-park-excel"
+                />
+
+
             </div>
         </div>
     )
